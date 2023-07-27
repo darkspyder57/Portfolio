@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a5d62c16e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span>#</span>UI/UX Designer</p>
+                <p><span>#</span>Web Developer</p>
+                <p><span>#</span>AI Enthusiast</p>
+                <h1>Hi, I'm <br><span>M Mohnish Kumar</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello there,  I'm M Mohnish Kumar and I am a 
+                        passionate web developer who is constantly 
+                        growing and expanding my skills in this exciting field. 
+                        I have always been fascinated by the endless 
+                        possibilities of the web and how it can be used to 
+                        bring people together, facilitate communication, 
+                        and create innovative solutions to real-world problems.  
+                        Thank you for taking the time to learn a bit about me, 
+                        and I look forward to sharing more with you!</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Android apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Summer Intern - Remote (May'23 - June'23)</span><br>Devtron.ai, Gurgaon, India</li>
+                                <p>Developed a Web Scraping Tool to scrape well known websites like Indeed, Kickstarter and Amazon.in</p>
+                                <li><span>Freelance - Remote (June'23 - June'23)</span><br>K.T, Kuala Lumpur, Malaysia</li>
+                                <p>Scraped tonnes of  Journal websites using Multi-Website scraping tool designed and developed my me.</p>
+                                <li><span>Freelance - Remote (June'23 - June'23)</span><br>Individual from USA</li>
+                                <p>Designed a logo for a Wine Shop IOS application which goes by the name Orly Wines.</p>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020 - 24</span><br>BTech in Computer Science and Engineering at Centurion University of Technology and Management</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------services-------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is the art of creating visually appealing and user-friendly websites that deliver a seamless and engaging online experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI/UX design creates visually appealing and intuitive digital experiences that optimize user satisfaction and engagement, ensuring products leave a lasting positive impression.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>App design is the art of crafting a user-friendly and visually appealing mobile application.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------portfolio------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work.jpg">
+                    <div class="layer">
+                        <h3>Courseware Web App</h3>
+                        <p>This website connects the students of Centurion University with their respective syllabus and course details and helps them grow.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work.jpg">
+                    <div class="layer">
+                        <h3>Library Management System</h3>
+                        <p>This web app keeps books in a structured manner so that people can read peacefully with no problem for searching for it here and there.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work.jpg">
+                    <div class="layer">
+                        <h3>Organ Donor System</h3>
+                        <p>This web app analyzes the list of organ donors and stores it in the database.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--------------contact-------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Get in touch</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>mohnishkumar57@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/dark_spyder2k23/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/m-mohnish-kumar-215262246/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/darkspyder57"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="M Mohnish Kumar cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Mohnish. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx_3eVKQ4pePluiMOPmXVAgPtbSeJIhl6V1Xd7hrtq-0-pJp57CvQM9jBEDqK1fpDaX/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
